@@ -1,4 +1,4 @@
-document.querySelector(".form").addEventListener("submit", (event) => {
+document.querySelector(".form").addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
     const name = document.getElementById("name").value;
@@ -18,15 +18,14 @@ document.querySelector(".form").addEventListener("submit", (event) => {
       },
       body: JSON.stringify(shop),
     };
-    fetch(
+    await fetch(
       `https://nikhild12377-grocerymart.herokuapp.com/register`,
       requestOptions
     )
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-
-    window.location.replace("/success.html");
   } catch (error) {
     console.error(error);
   }
+  window.location.replace("/success.html");
 });
