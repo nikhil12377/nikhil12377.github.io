@@ -1,0 +1,105 @@
+.row {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > div[class*="col-"] {
+  display: flex;
+}
+
+.row .card {
+  margin: 20px 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.navbar {
+  background: rgba(126, 217, 86, 255);
+}
+
+.navbar * {
+  color: white !important;
+}
+
+.btn,
+.dropdown-menu {
+  background: forestgreen;
+}
+
+.dropdown-item:hover {
+  background: rgba(126, 217, 86, 255);
+}
+
+form {
+  width: 500px;
+  margin: 0px auto;
+}
+
+.form-box {
+  margin-top: 70px;
+}
+
+.form-box label {
+  margin: 4px;
+}
+
+.form-box button {
+  font-size: 18px;
+  margin: 15px auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-box h2 {
+  margin: 50px 0;
+}
+
+.success-box {
+  margin-top: 150px;
+}
+
+.success-box .card {
+  margin: 0px auto;
+  width: fit-content !important;
+  background: rgba(126, 217, 86, 255);
+}
+
+.success-box .success-button {
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound-box .success-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.notFound-box .card {
+  margin: 0px auto;
+  width: 500px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notFound-box {
+  margin-top: 150px;
+}
+
+.notFound-box .card-title {
+  font-size: 100px;
+  margin-bottom: -15px;
+}
+
+.notFound-box .card {
+  background: rgba(126, 217, 86, 255);
+}
