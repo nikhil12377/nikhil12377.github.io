@@ -1,6 +1,5 @@
 document.querySelector(".form").addEventListener("submit", (event) => {
   event.preventDefault();
-
   try {
     const name = document.getElementById("name").value;
     const number = document.getElementById("number").value;
@@ -22,9 +21,12 @@ document.querySelector(".form").addEventListener("submit", (event) => {
     fetch(
       `https://nikhild12377-grocerymart.herokuapp.com/register`,
       requestOptions
-    );
+    )
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
 
-    window.location.replace("/success.html");
+    // window.location.replace("/success.html");
+    console.log(JSON.stringify(shop));
   } catch (error) {
     console.error(error);
   }
