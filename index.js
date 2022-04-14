@@ -25,8 +25,7 @@ document.querySelector(".form").addEventListener("submit", (event) => {
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
 
-    // window.location.replace("/success.html");
-    console.log(JSON.stringify(shop));
+    window.location.replace("/success.html");
   } catch (error) {
     console.error(error);
   }
