@@ -1,5 +1,14 @@
+body {
+  background: #f3f3f9;
+  box-sizing: border-box;
+}
+
+nav {
+  box-shadow: 0 19px 34px -15px #d2d2f2;
+}
+
 .row {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -40,8 +49,18 @@ form {
   margin: 0px auto;
 }
 
+.content-wrapper {
+  margin: 0px 50px;
+  min-height: calc(100vh - 135px - 75px);
+}
+
 .form-box {
-  margin-top: 70px;
+  width: 550px;
+  margin-top: 50px;
+  background-color: white;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.625rem;
 }
 
 .form-box label {
@@ -75,31 +94,4 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.notFound-box .success-box {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.notFound-box .card {
-  margin: 0px auto;
-  width: 500px !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.notFound-box {
-  margin-top: 150px;
-}
-
-.notFound-box .card-title {
-  font-size: 100px;
-  margin-bottom: -15px;
-}
-
-.notFound-box .card {
-  background: rgba(126, 217, 86, 255);
 }
