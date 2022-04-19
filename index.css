@@ -45,7 +45,7 @@ nav {
 }
 
 form {
-  width: 500px;
+  width: fit-content;
   margin: 0px auto;
 }
 
@@ -94,4 +94,18 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.form-group {
+  width: 450px;
+}
+
+.what-we-are {
+  background-color: white !important;
+}
+
+@media only screen and (max-width: 768px) {
+  [class*="form-group"] {
+    width: 360px;
+  }
 }
