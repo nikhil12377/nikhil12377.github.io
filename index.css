@@ -50,7 +50,6 @@ form {
 }
 
 .content-wrapper {
-  margin: 0px 50px;
   min-height: calc(100vh - 135px - 75px);
 }
 
@@ -103,8 +102,8 @@ form {
   background-color: white !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   [class*="form-group"] {
-    width: 360px;
+    width: 100%;
   }
 }
