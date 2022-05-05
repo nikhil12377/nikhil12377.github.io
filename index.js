@@ -1,3 +1,13 @@
+fetch("https://nikhild12377-grocerymart.herokuapp.com/data", { method: "get" })
+  .then((data) => data.json())
+  .then((res) => {
+    res.map((item) => {
+      document.getElementById(
+        "items"
+      ).innerHTML += `<option value=${item.standard}>${item.standard}</option>`;
+    });
+  });
+
 document.querySelector(".form").addEventListener("submit", async (event) => {
   event.preventDefault();
   try {
